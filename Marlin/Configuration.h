@@ -1061,7 +1061,8 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43.65, -10, -0.860 }
+#define NOZZLE_TO_PROBE_OFFSET { -43.65, -10, -2.50 } // for micro swiss hotend
+// #define NOZZLE_TO_PROBE_OFFSET { -43.65, -10, -0.860 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
