@@ -525,9 +525,12 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    // #define DEFAULT_Kp  21.73
+    // #define DEFAULT_Ki   1.54
+    // #define DEFAULT_Kd  76.55
+    #define DEFAULT_Kp 22.09
+    #define DEFAULT_Ki 1.80
+    #define DEFAULT_Kd 67.73
   #endif
 #endif // PIDTEMP
 
@@ -1061,7 +1064,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43.65, -10, -2.50 } // for micro swiss hotend
+#define NOZZLE_TO_PROBE_OFFSET { -43.65, -10, -2.0 } // for micro swiss hotend
 // #define NOZZLE_TO_PROBE_OFFSET { -43.65, -10, -0.860 }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1713,16 +1716,28 @@
 // Preheat Constants - Up to 5 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 185
-#define PREHEAT_1_TEMP_BED     45
+#define PREHEAT_1_TEMP_HOTEND 205
+#define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_TEMP_CHAMBER 35
-#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_1_FAN_SPEED   0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
+#define PREHEAT_2_TEMP_BED    80
 #define PREHEAT_2_TEMP_CHAMBER 35
-#define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_2_FAN_SPEED   0 // Value from 0 to 255
+
+#define PREHEAT_3_LABEL       "PETG"
+#define PREHEAT_3_TEMP_HOTEND 240
+#define PREHEAT_3_TEMP_BED    80
+#define PREHEAT_3_TEMP_CHAMBER 35
+#define PREHEAT_3_FAN_SPEED   0 // Value from 0 to 255
+
+#define PREHEAT_4_LABEL       "TPU"
+#define PREHEAT_4_TEMP_HOTEND 230
+#define PREHEAT_4_TEMP_BED    50
+#define PREHEAT_4_TEMP_CHAMBER 35
+#define PREHEAT_4_FAN_SPEED   0 // Value from 0 to 255
 
 /**
  * Nozzle Park
